@@ -4,7 +4,7 @@ if game.PlaceId == 537413528 then
 local BooHub = loadstring(game:HttpGet("https://raw.githubusercontent.com/zachisfunny/BooHub/main/Boo"))()
 
 local UI = BooHub.Load({
-     Title = "Hub",
+     Title = "Arda Ve Bora",
      Style = 0,
      SizeX = 400,
      SizeY = 300,
@@ -24,7 +24,7 @@ local Page3 = UI.New({
 })
 
 Page.Label({
-    Text = "Merhaba Ben Arda :)"
+    Text = "Merhaba :)"
 })
 
 
@@ -413,13 +413,6 @@ Page3.Button({ -- is a button
     end
 })
 
-Page3.Button({ -- is a button
-    Text = "Server Hop",
-    Callback = function()
-        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-    end
-})
-
 Page2.Button({ -- is a button
     Text = "Anti-AFK",
     Callback = function()
@@ -454,14 +447,14 @@ coroutine.wrap(function()
 while _G.RUN do wait()
 coroutine.wrap(function()
 while _G.RUN do wait()
-workspace.ItemBoughtFromShop:InvokeServer("Winter Chest",math.floor(game:GetService("Players").LocalPlayer.Data.Gold.Value / 100))
+workspace.ItemBoughtFromShop:InvokeServer("Winter Chest",math.floor(game:GetService("Players").LocalPlayer.Data.Gold.Value / 1000))
 end
 end)()
 end
 end)()
 end)
     end,
-    Enabled = false
+    Enabled = true
 })
 
 
