@@ -1,4 +1,4 @@
--- Doomspire Wrecker made by Yasin#9999
+-- Doomspire Wrecker made by QKarDa
 
 -- Instances:
 local doomspiregui = Instance.new("ScreenGui")
@@ -766,5 +766,5 @@ end
 coroutine.resume(coroutine.create(SCRIPT_YETB81_FAKESCRIPT))
 game.StarterGui:SetCore("SendNotification", {
 Title = "ø";
-Text = "The Hack Is Working On Doomspire :) ";
+Text = "The Hack Is Working On Doomspire :)   QKarDa ";
 })
